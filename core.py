@@ -29,7 +29,7 @@ class ZK:
                  parameters: ZKParameters,
                  jwt_secret: bytes = None,
                  jwt_alg: str = "HB2S",
-                 jwt_iss: str = "noknow"):
+                 jwt_iss: str = "kscst"):
         self._curve = curve_by_name(parameters.curve)
         if not self._curve:
             raise ValueError("The curve '{}' is invalid".format(parameters.curve))
